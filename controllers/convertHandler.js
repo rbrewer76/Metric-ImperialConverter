@@ -67,10 +67,9 @@ class ConvertHandler {
   }
 
   getString(initNum,initUnit,returnNum,returnUnit) {
-    return {initNum: initNum, initUnit: initUnit, returnNum: returnNum, returnUnit: returnUnit,
+    return {initNum, initUnit, returnNum, returnUnit,
       string: initNum + " " + this.spellOutUnit(initUnit)
-        + " converts to " + returnNum.toFixed(5) + " "
-        + this.spellOutUnit(returnUnit)}
+        + " converts to " + returnNum.toFixed(5) + " " + this.spellOutUnit(returnUnit)}
   }    
 }
 
